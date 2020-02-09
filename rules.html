@@ -1,0 +1,191 @@
+<?php 
+	session_start(); 
+
+	if (!isset($_SESSION['username'])) {
+		$_SESSION['msg'] = "You must log in first";
+		header('location: login.php');
+	}
+
+	if (isset($_GET['logout'])) {
+		session_destroy();
+		unset($_SESSION['username']);
+		header("location: login.php");
+	}
+
+?>
+
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motor Vehicles Department</title>
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.w3-button {width:150px;}
+table, th, td {
+    border: 1px solid black;
+}
+
+</style>
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header>
+    <div class="primary_header">
+      <a href="main.html"><img src="MVDMo_logo.jpg" id="HeaderMain1_DeptLogo" width="84" height="80" align="left"></a><img src="emblem_n.png" id="HeaderMain1_DeptLogo" width="84" height="80" align="right" />
+        <span id="HeaderMain1_lbl_headTitle" class="title" style="text-align:left"><h1><a href="main.html">Online Learning Licence Application	<img src="maharashtralogo.png" id="HeaderMain1_DeptLogo" width="84" height="80" align="right" /> <br><h2>Mumbai</h2></a></h1></span>
+      
+    </div>
+    <nav class="secondary_header" id="menu">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="contactus.html">Contact Us</a></li> 
+        <li><a href="login.php">Login<br>SignUp</a></li>
+        <li><a href="olinks.html">Other Links</a></li>
+      </ul>
+    </nav>
+  </header>
+	<table class="table table-bordered table-striped" cellspacing="0" rules="cols" border="1" id="SitePH_grdupload" style="width:100%;border-collapse:collapse;">
+		<tbody><tr>
+			<th scope="col" style="width:5%;"><center><b>Sr. No.</b></center></th><th scope="col"><center><b>Subject</b></center></th><th scope="col"><center><b>Date</b></center></th><th scope="col"><center><b>Size (MB)</b></center></th><th scope="col"><center><b>Download</b></center></th>
+		</tr><tr>
+			<td>
+                        <span id="SitePH_grdupload_lblSN_0">1</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblDOCNo_0">Rules of Road Regulations</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblCreatedDate_0">20/02/2017</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblsize_0">0.04</span>
+                    </td><td>
+                        <a class="align-center" href="pdf/The-Road-Regulations-Rules-1989.pdf" target="_blank">
+                            <img id="img1" src="../../Images/pdf.png" alt="Click here to Download PDF"></a>
+                    </td>
+		</tr><tr>
+			<td>
+                        <span id="SitePH_grdupload_lblSN_1">2</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblDOCNo_1">The Motor Vehicles Act, 1988</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblCreatedDate_1">01/01/2016</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblsize_1">0.98</span>
+                    </td><td>
+                        <a class="align-center" href="pdf/The Motor Vehicles Act, 1988.pdf" target="_blank">
+                            <img id="img1" src="../../Images/pdf.png" alt="Click here to Download PDF"></a>
+                    </td>
+		</tr><tr>
+			<td>
+                        <span id="SitePH_grdupload_lblSN_2">3</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblDOCNo_2">The Central Motor Vehicles Rules, 1989</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblCreatedDate_2">01/01/2016</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblsize_2">1.38</span>
+                    </td><td>
+                        <a class="align-center" href="pdf/The Central Motor Vehicles Rules,1989.pdf" target="_blank">
+                            <img id="img1" src="../../Images/pdf.png" alt="Click here to Download PDF"></a>
+                    </td>
+		</tr><tr>
+			<td>
+                        <span id="SitePH_grdupload_lblSN_3">4</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblDOCNo_3">The Maharashtra Motor Vehicles Rules, 1989</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblCreatedDate_3">01/01/2016</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblsize_3">1.04</span>
+                    </td><td>
+                        <a class="align-center" href="pdf/The Maharashtra Motor Vehicles Rules, 1989.pdf" target="_blank">
+                            <img id="img1" src="../../Images/pdf.png" alt="Click here to Download PDF"></a>
+                    </td>
+		</tr><tr>
+			<td>
+                        <span id="SitePH_grdupload_lblSN_4">5</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblDOCNo_4">The Maharashtra Motor Vehicles Tax Act</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblCreatedDate_4">01/01/2016</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblsize_4">22.21</span>
+                    </td><td>
+                        <a class="align-center" href="pdf/The Maharashtra Motor Vehicles Tax Act.pdf" target="_blank">
+                            <img id="img1" src="../../Images/pdf.png" alt="Click here to Download PDF"></a>
+                    </td>
+		</tr><tr>
+			<td>
+                        <span id="SitePH_grdupload_lblSN_5">6</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblDOCNo_5">The Maharashtra Motor Vehicles Tax Rules, 1959</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblCreatedDate_5">01/01/2016</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblsize_5">0.62</span>
+                    </td><td>
+                        <a class="align-center" href="pdf/The Maharashtra Motor Vehicles Tax Rules, 1959.pdf" target="_blank">
+                            <img id="img1" src="../../Images/pdf.png" alt="Click here to Download PDF"></a>
+                    </td>
+		</tr><tr>
+			<td>
+                        <span id="SitePH_grdupload_lblSN_6">7</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblDOCNo_6">Bombay Motor Vehicle Passenger Tax Act, 1958</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblCreatedDate_6">01/01/2016</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblsize_6">2.87</span>
+                    </td><td>
+                        <a class="align-center" href="pdf/Bombay Motor Vehicle Passenger Tax Act 1985.pdf" target="_blank">
+                            <img id="img1" src="../../Images/pdf.png" alt="Click here to Download PDF"></a>
+                    </td>
+		</tr><tr>
+			<td>
+                        <span id="SitePH_grdupload_lblSN_7">8</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblDOCNo_7">Bombay Motor Vehicle Passenger Rules</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblCreatedDate_7">01/01/2016</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblsize_7">1.88</span>
+                    </td><td>
+                        <a class="align-center" href="pdf/Bombay Motor Vehicle Passenger Rules.pdf" target="_blank">
+                            <img id="img1" src="../../Images/pdf.png" alt="Click here to Download PDF"></a>
+                    </td>
+		</tr><tr>
+			<td>
+                        <span id="SitePH_grdupload_lblSN_8">9</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblDOCNo_8">School Management System</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblCreatedDate_8">01/01/2016</span>
+                    </td><td>
+                        <span id="SitePH_grdupload_lblsize_8">1.28</span>
+                    </td><td>
+                        <a class="align-center" href="pdf/School Managment System.pdf" target="_blank">
+                            <img id="img1" src="../../Images/pdf.png" alt="Click here to Download PDF"></a>
+                    </td>
+		</tr>
+	</tbody></table>
+	
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2017 - <strong> This is the official website of Motor Vehicles Department, Maharashtra. All Rights Reserved.</strong></div>
+  </footer>
+</div>
+</body>
+</html>

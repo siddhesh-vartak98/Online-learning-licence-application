@@ -1,0 +1,83 @@
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motor Vehicles Department</title>
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.w3-button {width:150px;}
+</style>
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header>
+    <div class="primary_header">
+     <a href="main.html"><img src="MVDMo_logo.jpg" id="HeaderMain1_DeptLogo" width="84" height="80" align="left"></a><img src="emblem_n.png" id="HeaderMain1_DeptLogo" width="84" height="80" align="right" />
+        <span id="HeaderMain1_lbl_headTitle" class="title" style="text-align:left"><h1><a href="main.html">Online Learning Licence Application	<img src="maharashtralogo.png" id="HeaderMain1_DeptLogo" width="84" height="80" align="right" /> <br><h2>Mumbai</h2></a></h1></span>
+      
+    </div>
+    <nav class="secondary_header" id="menu">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="contactus.html">Contact Us</a></li> 
+		<li><a href="howtoapply.html">How to Apply</a></li>
+        <li><a href="login.php">Login<br>SignUp</a></li>
+        <li><a href="olinks.html">Other Links</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section >
+    
+    	<div class="content">
+		<script>
+			var dateString = "<h2>Payment Successfull of <br><b>53 Rupees</b></h2><br><h4>Form submitted successfully<br>Please visit the RTO Office between 10.00AM to 4.00PM <br>Your appointment date is:</h4> ";  
+
+			var newDate = new Date();  
+
+			// Get the month, day, and year.  
+			dateString += (newDate.getMonth() + 3) + "/";  
+			dateString += newDate.getDate() + "/";  
+			dateString += newDate.getFullYear();  
+			document.write(dateString);
+ 
+</script>
+
+<div id="cid_2" class="form-input-wide">
+         
+		 <div style="margin-left:156px;" class="form-buttons-wrapper">
+            <button id="input_2" type="prsubmit" name="prsubmit" class="form-submit-button" data-component="button" onclick="myFunction()">
+              Print  
+            </button>
+            <script>
+				function myFunction() {
+    			window.print();
+				}
+			</script>
+          </div>
+        </div><br>
+    <div class="w3-container">
+			<p> <a href="login.php?logout='1'" style="color: red;"><p><button class="w3-button w3-cyan">Logout</button></p></a> </p>
+	</div>
+    </div>
+  </section>
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2017 - <strong> This is the official website of Motor Vehicles Department, Maharashtra. All Rights Reserved.</strong></div>
+  </footer>
+</div>
+</body>
+</html>
